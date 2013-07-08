@@ -24,7 +24,7 @@ The nodes can be added to cloudera by their hostname, a pattern can be used to f
 
 E.G.
 
-		hadoop-node[1-node_count]
+		hadoop-node[1-5]
 
 SSH details for logging into the nodes:
 
