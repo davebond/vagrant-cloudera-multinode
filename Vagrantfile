@@ -8,10 +8,10 @@ Vagrant.configure("2") do |config|
   node_ram = 2048
 
   # Create hosts data
-  hosts = "192.168.50.2 hadoop-manager\n"
+  hosts = "192.168.50.2 hadoop-manager.cluster hadoop-manager\n"
   node_count.times do |i|
     id = i+1
-    hosts << "192.168.50.#{id+2} hadoop-node#{id}\n"
+    hosts << "192.168.50.#{id+2} hadoop-node#{id}.cluster hadoop-node#{id}\n"
   end
 
   # Use ubuntu precise
